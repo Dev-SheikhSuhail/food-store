@@ -180,7 +180,8 @@ header > h1 {
 }
 /* fisrt section stykling */
 .section-c {
-  background-color: whitesmoke;
+  background-color: white;
+  padding: 80px 0px;
 }
 .heading-about {
   font-size: 45px;
@@ -189,10 +190,11 @@ header > h1 {
 .div-about {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   /* column-gap: 95px; */
   height: 610px;
   padding-top: 60px;
+  padding: 0px 60px;
 }
 .maindiv-image {
   border-radius: 700px;
@@ -210,13 +212,20 @@ header > h1 {
   width: 600px;
   height: 600px;
 }
-
+.para-maindiv-about {
+  padding: 0px 0px 40px;
+}
 .item-1-about {
-  flex-basis: 560px;
+  flex-basis: 566px;
   font-size: 27px;
-  align-self: center;
+  align-self: flex-start;
 }
 .about-products {
   font-weight: 400;
   font-size: smaller;
+  padding: 0px 0px 30px;
+}
+.heading-about2 {
+  font-size: 60px;
+  padding: 20px 0px 20px;
 }
