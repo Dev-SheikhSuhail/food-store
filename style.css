@@ -18,10 +18,17 @@ header > h1 {
   font-size: 35px;
   font-weight: 700;
 }
+
 .navlinks > a {
   color: black;
   text-decoration: none;
-  padding: 20px;
+  /* padding: 20px; */
+  margin: 20px;
+}
+.navlinks > a:hover {
+  border-bottom: 3px solid #ff1493;
+  /* margin: 20px; */
+  padding: 0px 0px 2px 0px;
 }
 .section-A {
   background-color: whitesmoke;
@@ -228,4 +235,110 @@ header > h1 {
 .heading-about2 {
   font-size: 60px;
   padding: 20px 0px 20px;
+}
+.order-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 30px;
+  font-size: 20px;
+  /* padding-bottom: 76px; */
+}
+.menu-lists {
+  display: flex;
+  justify-content: flex-start;
+  padding: 28px 28px 28px 65px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 10px 0px;
+}
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  width: 255px;
+  /* box-shadow: -4px 6px 15px greygrey; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 20px;
+  background-color: #fff;
+}
+.image-of-menu > img {
+  width: 215px;
+}
+.menu-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.menu-details-child1 {
+  font-size: 18px;
+  font-weight: 300;
+  /* margin: 5px 22px; */
+}
+.menu-details-child2 {
+  /* margin: 0px 22px; */
+  font-size: 18px;
+  font-weight: 500;
+}
+.menu-details > div:last-child > a {
+  color: #ff1493;
+  text-decoration: none;
+  font-size: 18px;
+  border: 2px solid #ff1493;
+  border-radius: 5px;
+  padding: 6px 10px;
+  /* margin: 5px 10px; */
+}
+.menu-details > div:last-child > a > button {
+  padding: 5px;
+  color: #ff1493;
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.menu-details > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-details > div:last-child > p {
+  /* margin: 0px 22px; */
+}
+.section-D {
+  background-color: whitesmoke;
+}
+.oders-div {
+  padding: 75px 0px;
+}
+.section-E > h1 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+.asked-questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 35px 0px 100px 0px;
+}
+.asked-questions > details > summary {
+  border: 1px solid gray;
+  margin: 10px 0px;
+  padding: 15px;
+  width: 900px;
+  border-radius: 5px;
+}
+.section-E {
+  padding: 60px 0px;
+}
+.download {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
