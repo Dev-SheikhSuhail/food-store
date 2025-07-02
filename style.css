@@ -342,3 +342,18 @@ header > h1 {
   flex-direction: row;
   align-items: center;
 }
+.download-img > img {
+  width: 800px;
+}
+.download-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 400px;
+  gap: 20px;
+}
+.download-text > h1 {
+  font-size: 40px;
+}
