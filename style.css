@@ -341,9 +341,10 @@ header > h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 .download-img > img {
-  width: 800px;
+  width: 740px;
 }
 .download-text {
   display: flex;
@@ -351,9 +352,60 @@ header > h1 {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  flex-basis: 400px;
+  flex-basis: 500px;
   gap: 20px;
+  text-align: center;
 }
-.download-text > h1 {
+.download-text > h2 {
   font-size: 40px;
+  font-weight: 900;
+}
+.section-F {
+  padding: 75px 0px;
+}
+.download-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.download-btn > button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: black;
+  color: #fff;
+  width: 169px;
+  border-radius: 10px;
+  padding: 11px 10px;
+}
+.download-btn > button > i {
+  font-size: 35px;
+  /* color: white; */
+}
+.section-F {
+  background-color: whitesmoke;
+}
+.download-span {
+  font-size: 20px;
+}
+.footer-list {
+  list-style-type: none;
+}
+.quick-link > li > a {
+  text-decoration: none;
+  color: black;
+}
+.footer-heading {
+  color: #ff1493;
+}
+.footer-div {
+  display: flex;
+  flex-direction: row;
+}
+.footer-div-child {
+  width: 370px;
+}
+.footer-para {
 }
