@@ -15,54 +15,56 @@
     <!-- https://idigitify-fstore.netlify.app/ -->
   </head>
   <body>
+    <!-- header -->
     <header>
       <h1>food store</h1>
       <nav class="navlinks">
-        <a href="#home" class="header-link1">home</a>
-        <a href="#about" class="header-link2">about</a>
-        <a href="#menu" class="header-link3">menu</a>
-        <a href="#download" class="header-link4">download apps</a>
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#download">download app</a>
       </nav>
     </header>
+    <!-- header -->
+    <!-- main -->
     <main>
-      <section class="section-A" id="home">
-        <div class="main-div">
-          <section class="item-1">
-            <h1 class="main-heading1">welcome to my food store</h1>
+      <!-- home section  -->
+      <div id="home">
+        <section class="home-section">
+          <h1 class="home-heading">welcome to my food store</h1>
 
-            <p class="para-maindiv">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
-              atque ab reiciendis aliquid molestiae distinctio error? Soluta
-              praesentium possimus quaerat! Dicta, consequuntur!
-            </p>
-            <a href=""><button class="btn">explore more</button></a>
-          </section>
-          <section class="item-2">
-            <img
-              src="assets/hamburger.jpg"
-              alt="image of burger"
-              class="image-maindiv"
-            />
-          </section>
-        </div>
-      </section>
-      <section class="product-cards">
-        <h2 class="card-heading">OUR PRODUCTS</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, atque
+            ab reiciendis aliquid molestiae distinctio error? Soluta praesentium
+            possimus quaerat! Dicta, consequuntur!
+          </p>
+          <a href="#"><button class="home-btn">explore more</button></a>
+        </section>
+
+        <img
+          src="assets/hamburger.jpg"
+          alt="image of burger"
+          class="home-image"
+        />
+      </div>
+      <!-- home section -->
+      <!-- product section -->
+      <section class="product-section">
+        <h2 class="product-heading">OUR PRODUCTS</h2>
         <div class="product">
-          <div class="product-card-1">
-            <div class="card-img-1">
-              <img
-                src="assets/meal-1.jpg"
-                alt="image of product"
-                class="card-img-1"
-              />
-            </div>
-            <div class="card-div-1">
+          <div class="product-card">
+            <img
+              src="assets/meal-1.jpg"
+              alt="image of product"
+              class="product-img"
+            />
+
+            <div class="product-card-div">
               <span>VEGETARIAN</span>
               <p>japanese gyoza</p>
             </div>
-            <div class="card-list">
-              <ul class="unorder-list">
+            <div class="product-card-list">
+              <ul class="card-list">
                 <li>
                   <i class="fa-solid fa-fire fa-flip-horizontal fa-lg icons"></i
                   >650 calories
@@ -76,21 +78,20 @@
               </ul>
             </div>
           </div>
-          <div class="product-card-1">
-            <div class="card-img-1">
-              <img
-                src="assets/meal-2.jpg"
-                alt="image of product"
-                class="card-img-1"
-              />
-            </div>
-            <div class="card-div-1">
+          <div class="product-card">
+            <img
+              src="assets/meal-2.jpg"
+              alt="image of product"
+              class="product-img"
+            />
+
+            <div class="product-card-div">
               <span>VEGAN</span>
               <span id="card-span">PALEO</span>
               <p>avacado salad</p>
             </div>
-            <div class="card-list">
-              <ul class="unorder-list">
+            <div class="product-card-list">
+              <ul class="card-list">
                 <li>
                   <i class="fa-solid fa-fire fa-flip-horizontal fa-lg icons"></i
                   >400 calories
@@ -104,20 +105,19 @@
               </ul>
             </div>
           </div>
-          <div class="product-card-1">
-            <div class="card-img-1">
-              <img
-                src="assets/photo-1455619452474-d2be8b1e70cd.avif"
-                alt="image of product"
-                class="card-img-1"
-              />
-            </div>
-            <div class="card-div-1">
+          <div class="product-card">
+            <img
+              src="assets/photo-1455619452474-d2be8b1e70cd.avif"
+              alt="image of product"
+              class="product-img"
+            />
+
+            <div class="product-card-div">
               <span>VEGETARIAN</span>
               <p>japanese gyoza</p>
             </div>
-            <div class="card-list">
-              <ul class="unorder-list">
+            <div class="product-card-list">
+              <ul class="card-list">
                 <li>
                   <i class="fa-solid fa-fire fa-flip-horizontal fa-lg icons"></i
                   >450 calories
@@ -133,37 +133,40 @@
           </div>
         </div>
       </section>
-      <section class="section-B">
-        <div class="working-cards">
-          <h1>how it's works</h1>
-          <div class="cards">
-            <div class="cards-child card-child-1">
-              <h3>easy order</h3>
-              <i class="fa-regular fa-clock"></i>
-              <p>
-                lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptates, in.
-              </p>
-            </div>
-            <div class="cards-child card-child-2">
-              <h3>easy order</h3>
-              <i class="fa-solid fa-trophy"></i>
-              <p>
-                lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptates, in.
-              </p>
-            </div>
-            <div class="cards-child card-child-3">
-              <h3>easy order</h3>
-              <i class="fa-regular fa-circle-check"></i>
-              <p>
-                lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptates, in.
-              </p>
-            </div>
+      <!-- product section end here -->
+      <!-- working-section start here -->
+      <section class="working-section">
+        <!-- <div class="working-card"> -->
+        <h1 class="working-heading">how it's works</h1>
+        <div class="working-card">
+          <div class="working-child">
+            <h3>easy order</h3>
+            <i class="fa-regular fa-clock"></i>
+            <p>
+              lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates, in.
+            </p>
+          </div>
+          <div class="working-child">
+            <h3>best quality</h3>
+            <i class="fa-solid fa-trophy"></i>
+            <p>
+              lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates, in.
+            </p>
+          </div>
+          <div class="working-child">
+            <h3>fast delivery</h3>
+            <i class="fa-regular fa-circle-check"></i>
+            <p>
+              lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates, in.
+            </p>
           </div>
         </div>
+        <!-- </div> -->
       </section>
+      <!-- working section end here -->
       <section class="section-c" id="about">
         <div class="div-about">
           <section class="item-2-about">
@@ -387,6 +390,7 @@
         </div>
       </section>
     </main>
+    <!-- main -->
     <footer>
       <div class="footer-div">
         <div>

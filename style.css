@@ -6,13 +6,16 @@
   text-transform: capitalize;
   font-family: 'Josefin Sans', 'sans-serif';
 }
-/* header used flex to align item in row  */
+/* header starts from here  */
 header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* padding:to make space between border and content  */
   padding: 20px 10px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  box-shadow: -1px 0px 5px gray;
 }
 header > h1 {
   font-size: 35px;
@@ -21,30 +24,27 @@ header > h1 {
 .navlinks {
   display: flex;
   flex-direction: row;
-  /* align-items: center;
-  justify-content: center; */
   gap: 40px;
 }
 .navlinks > a {
   color: black;
   text-decoration: none;
-  /* padding: 20px; */
-  /* margin: 20px; */
-  padding: 5px 0px 5px 0px;
+
+  padding: 5px 0px 0px 0px;
+  font-size: 20px;
 }
 .navlinks > a:hover {
-  border-bottom: 3px solid #ff1493;
-  /* margin: 20px; */
-  padding: 0px 0px 2px 0px;
+  border-bottom: 1px solid #ff1493;
 }
-.section-A {
-  background-color: whitesmoke;
-}
-.main-heading1 {
+/* header ends here*/
+
+/* home section starts from here */
+.home-heading {
   font-size: 60px;
 }
 
-.main-div {
+#home {
+  background-color: whitesmoke;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -55,7 +55,7 @@ header > h1 {
 .maindiv-image {
   border-radius: 700px;
 }
-.btn {
+.home-btn {
   color: white;
   background-color: rgb(229, 31, 137);
   padding: 15px 35px;
@@ -63,50 +63,49 @@ header > h1 {
   border: none;
   border-radius: 5px;
 }
-.image-maindiv {
+.home-image {
   border-radius: 50%;
   width: 500px;
   height: 500px;
 }
 
-.item-1 {
+.home-section {
   flex-basis: 580px;
   font-size: 30px;
   align-self: center;
 }
+/* home section ends here */
+
+/* product section starta from here */
 .product {
-  /* margin-top: 0px; */
   height: 700px;
-}
-.card-heading {
-  text-align: center;
-  /* margin-bottom: 0px; */
-}
-.product {
   display: flex;
   justify-content: space-around;
 }
-.product-img-1 {
+.product-heading {
+  text-align: center;
+}
+
+.card-img-1 {
   width: 400px;
 }
-.product-card-1 {
-  /* border: 3px solid rgb(55, 129, 70); */
+.product-card {
   border-radius: 25px;
   width: 356px;
   height: 550px;
   margin-top: 35px;
   box-shadow: 2px 4px 15px grey;
 }
-.card-img-1 {
+.product-img {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   width: 356px;
 }
-.card-div-1 {
+.product-card-div {
   margin-top: 30px;
   padding-left: 20px;
 }
-.card-div-1 > span {
+.product-card-div > span {
   background-color: rgb(81, 207, 102);
   padding: 5px 10px;
   font-size: 20px;
@@ -115,18 +114,17 @@ header > h1 {
   margin-left: 25px;
   color: rgb(33, 33, 33);
 }
-.card-div-1 > p {
+.product-card-div > p {
   margin-top: 20px;
   font-size: 20px;
   margin-left: 25px;
   color: rgb(33, 33, 33);
 }
-.card-list {
+.product-card-list {
   padding-top: 25px;
-  /* margin-left: 40px; */
   color: rgb(33, 33, 33);
 }
-.card-list > ul > li {
+.product-card-list > ul > li {
   font-size: 20px;
   padding: 10px;
   display: flex;
@@ -134,14 +132,14 @@ header > h1 {
   gap: 25px;
   align-items: center;
 }
-.product-cards {
+.product-section {
   margin-top: 20px;
 }
 #card-span {
   background-color: #ffd43b;
   margin: auto;
 }
-.card-list > ul {
+.product-card-list > ul {
   display: flex;
   flex-direction: column;
   list-style-type: none;
@@ -150,18 +148,21 @@ header > h1 {
   color: rgb(230, 126, 34);
   font-size: 30px;
 }
-.unorder-list {
+.card-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding-left: 15px;
 }
-.working-cards > h1 {
+/* product ends  here  */
+
+/* working-section start from here */
+.working-heading {
   text-align: center;
   font-size: 35px;
 }
 
-.cards-child {
+.working-child {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -174,26 +175,30 @@ header > h1 {
   box-shadow: 2px 4px 15px grey;
   border-radius: 15px;
 }
-.cards {
+.working-child > p {
+  font-size: 16px;
+  text-align: center;
+}
+.working-card {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 30px 0px;
 }
-.section-B {
+.working-section {
   background-color: whitesmoke;
   padding: 30px;
 }
-.cards-child > h3 {
+.working-child > h3 {
   font-size: 25px;
 }
-.cards-child > i {
+.working-child > i {
   font-size: 45px;
 }
-.cards {
-  padding: 30px 0px;
-}
-/* fisrt section stykling */
-.section-c {
+
+/* working-section end here */
+
+.aboutus-section {
   background-color: white;
   padding: 80px 0px;
 }
@@ -312,9 +317,6 @@ header > h1 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-.menu-details > div:last-child > p {
-  /* margin: 0px 22px; */
 }
 .section-D {
   background-color: whitesmoke;
